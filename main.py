@@ -131,7 +131,6 @@ class Trainer:
                 loss = self.criterion(pred, rgb_vals)
                 # loss_color = self.criterion(color, rgb_vals_gt)
                 # combined_loss = loss + loss_color
-                # combined_loss.backward()
                 loss.backward()
                 self.optimizer.step()
 
